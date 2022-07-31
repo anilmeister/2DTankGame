@@ -25,13 +25,16 @@ public class MoveScript : MonoBehaviour
 
     private void Update()
     {
+        // move = Input.GetAxisRaw("Vertical") * movementSpeed * Time.fixedDeltaTime;
+        //  rotation  += Input.GetAxisRaw("Horizontal") * -rotationSpeed * Time.deltaTime;
         //
         //movement.x = Input.GetAxisRaw("Horizontal");
         //move = Input.GetAxisRaw("Vertical") * movementSpeed * Time.deltaTime;
         movement.y = Input.GetAxisRaw("Vertical");
-        move = Input.GetAxisRaw("Vertical") * movementSpeed * Time.deltaTime;
-        rotation  += Input.GetAxisRaw("Horizontal") * -rotationSpeed * Time.deltaTime;
-        movement.x = rotation;
+        movement.x = Input.GetAxisRaw("Horizontal");
+       
+       
+        //movement.x = rotation;
 
     }
 
@@ -39,12 +42,21 @@ public class MoveScript : MonoBehaviour
 
     //Fixed for movement (physics)
     void FixedUpdate()       
-    {
+    {   
+        
         //rb.MovePosition(rb.position + movement * movementSpeed * Time.fixedDeltaTime);
-        //rb.MovePosition(rb.position + movement * movementSpeed * Time.fixedDeltaTime);
-        rb.AddForce(transform.up * move, ForceMode2D.Force);
-        rb.rotation = rotation;
+        //rb.MovePosition(transform.forward + move);
+        //rb.AddForce(transform.up * move, ForceMode2D.Force);
+        //rb.rotation = rotation;
+
+
+        //Transform should not be used with any physics object
         //transform.Translate(0f, move, 0f);
         //transform.Rotate(0f, 0f, rotation);
+
+
+
+        rb.velocity = (Vector2)transform.up * movement.y * movementSpeed * Time.fixedDeltaTime;
+        rb.MoveRotation(transform.rotation * Quaternion.Euler(0, 0, -movement.x * rotationSpeed * Time.fixedDeltaTime));
     }
 }
