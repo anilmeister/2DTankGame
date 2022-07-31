@@ -10,6 +10,7 @@ public class Shooting : MonoBehaviour
     public GameObject bulletPrefab;
     public GameObject mgBulletPrefab;
     public GameObject muzzleFlash;
+    public GameObject machineGunMuzzleFlash;
 
 
     public float bulletForce = 20f;
@@ -33,8 +34,8 @@ public class Shooting : MonoBehaviour
 
     void Shoot()
     {
-       //GameObject effect = Instantiate(muzzleFlash, transform.position, Quaternion.identity);
-       //Destroy(effect, 0.2f);
+       GameObject effect = Instantiate(muzzleFlash, transform.position, Quaternion.identity);
+       Destroy(effect, 0.2f);
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
        rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
@@ -42,8 +43,8 @@ public class Shooting : MonoBehaviour
     }
     void MachineGun()
     {
-        //GameObject effect = Instantiate(muzzleFlash, transform.position, Quaternion.identity);
-        //Destroy(effect, 0.2f);
+        GameObject effect = Instantiate(machineGunMuzzleFlash, machineGun.position, Quaternion.identity);
+        Destroy(effect, 0.2f);
         GameObject bullet = Instantiate(mgBulletPrefab, machineGun.position, machineGun.rotation);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.AddForce(machineGun.up * bulletForce, ForceMode2D.Impulse);
