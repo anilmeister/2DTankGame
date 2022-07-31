@@ -223,6 +223,26 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4448312905234516793, guid: 8f62dda92446d7e4db1389891b6dbc1f, type: 3}
+      propertyPath: movementSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4448312905234516793, guid: 8f62dda92446d7e4db1389891b6dbc1f, type: 3}
+      propertyPath: rotationSpeed
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4448312905234516794, guid: 8f62dda92446d7e4db1389891b6dbc1f, type: 3}
+      propertyPath: m_Mass
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4448312905234516794, guid: 8f62dda92446d7e4db1389891b6dbc1f, type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4448312905234516794, guid: 8f62dda92446d7e4db1389891b6dbc1f, type: 3}
+      propertyPath: m_AngularDrag
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4448312905234516794, guid: 8f62dda92446d7e4db1389891b6dbc1f, type: 3}
       propertyPath: m_SleepingMode
       value: 0
