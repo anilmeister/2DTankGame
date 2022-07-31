@@ -30,7 +30,7 @@ public class MoveScript : MonoBehaviour
         //move = Input.GetAxisRaw("Vertical") * movementSpeed * Time.deltaTime;
         movement.y = Input.GetAxisRaw("Vertical");
         move = Input.GetAxisRaw("Vertical") * movementSpeed * Time.deltaTime;
-        rotation  += Input.GetAxisRaw("Horizontal") * - rotationSpeed * Time.deltaTime;
+        rotation  += Input.GetAxisRaw("Horizontal") * -rotationSpeed * Time.deltaTime;
         movement.x = rotation;
 
     }

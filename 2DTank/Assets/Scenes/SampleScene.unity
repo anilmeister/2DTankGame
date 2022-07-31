@@ -258,6 +258,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8449516061326411475, guid: 466332e36e478d041bd2cd55da46b38a, type: 3}
+      propertyPath: movementSpeed
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 8449516061326411476, guid: 466332e36e478d041bd2cd55da46b38a, type: 3}
       propertyPath: m_Name
       value: Hull
