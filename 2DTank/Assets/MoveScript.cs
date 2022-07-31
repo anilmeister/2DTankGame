@@ -10,8 +10,9 @@ public class MoveScript : MonoBehaviour
     public float move;
 
     public Rigidbody2D rb;
-    public float rotation;
+
     Vector2 movement;
+    public float rotation;
 
     // Update is called once per frame
 
@@ -26,8 +27,10 @@ public class MoveScript : MonoBehaviour
     {
         //
         //movement.x = Input.GetAxisRaw("Horizontal");
-        move = Input.GetAxisRaw("Vertical") * movementSpeed * Time.deltaTime;
-        rotation  = Input.GetAxisRaw("Horizontal") * - rotationSpeed * Time.deltaTime;
+        //move = Input.GetAxisRaw("Vertical") * movementSpeed * Time.deltaTime;
+        movement.y = Input.GetAxisRaw("Vertical");
+        movement.x = 0f;
+        rotation  += Input.GetAxisRaw("Horizontal") * - rotationSpeed * Time.deltaTime;
            
     }
 
@@ -37,7 +40,9 @@ public class MoveScript : MonoBehaviour
     void FixedUpdate()       
     {
         //rb.MovePosition(rb.position + movement * movementSpeed * Time.fixedDeltaTime);
-        transform.Translate(0f, move, 0f);
-        transform.Rotate(0f, 0f, rotation);
+        rb.MovePosition(rb.position + movement * movementSpeed * Time.fixedDeltaTime);
+        rb.rotation = rotation;
+        //transform.Translate(0f, move, 0f);
+        //transform.Rotate(0f, 0f, rotation);
     }
 }
