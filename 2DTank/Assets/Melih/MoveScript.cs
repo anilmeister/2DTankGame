@@ -18,8 +18,8 @@ public class MoveScript : MonoBehaviour
 
     private void Start()
     {
-        movementSpeed = 20f;
-        rotationSpeed = 50f;
+        movementSpeed = 450f;
+        rotationSpeed = 60f;
     }
 
 
