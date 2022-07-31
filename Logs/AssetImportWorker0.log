@@ -1,0 +1,226 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.7f1 (24e8595d6d43) revision 2418777'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Professional' Language: 'tr' Physical Memory: 16310 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.7f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+E:/Unity Projeleri/2D/2DTestProject
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+63367
+Successfully changed project path to: E:/Unity Projeleri/2D/2DTestProject
+E:/Unity Projeleri/2D/2DTestProject
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 79.45 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.7f1 (24e8595d6d43)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.7f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/Unity Projeleri/2D/2DTestProject/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3070 Ti (ID=0x2482)
+    Vendor:   NVIDIA
+    VRAM:     8041 MB
+    Driver:   31.0.15.1659
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.7f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.7f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56192
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.005079 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 73.44 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.454 seconds
+Domain Reload Profiling:
+	ReloadAssembly (454ms)
+		BeginReloadAssembly (52ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (324ms)
+			LoadAssemblies (50ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (67ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (18ms)
+			SetupLoadedEditorAssemblies (201ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (73ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (88ms)
+				ProcessInitializeOnLoadMethodAttributes (33ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.007294 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\Unity Projeleri\2D\2DTestProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image E:\Unity Projeleri\2D\2DTestProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 75.31 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Package Manager log level set to [2]
+Mono: successfully reloaded assembly
+- Completed reload, in  0.853 seconds
+Domain Reload Profiling:
+	ReloadAssembly (854ms)
+		BeginReloadAssembly (81ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (685ms)
+			LoadAssemblies (70ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (165ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (368ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (75ms)
+				BeforeProcessingInitializeOnLoad (79ms)
+				ProcessInitializeOnLoadAttributes (170ms)
+				ProcessInitializeOnLoadMethodAttributes (33ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.92 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4451 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 68 unused Assets / (223.4 KB). Loaded Objects now: 4880.
+Memory consumption went from 163.3 MB to 163.1 MB.
+Total: 2.991500 ms (FindLiveObjects: 0.271900 ms CreateObjectMapping: 0.201800 ms MarkObjects: 2.392400 ms  DeleteObjects: 0.124800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1848.028640 seconds.
+  path: Assets/Dimensional Developer
+  artifactKey: Guid(0446325983cf7d2478bfbd637796473b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dimensional Developer using Guid(0446325983cf7d2478bfbd637796473b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd367a7e13198d1e50adc98c884cb047') in 0.010554 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.054693 seconds.
+  path: Assets/Dimensional Developer/Tank Builder/Third-Party Notices.txt
+  artifactKey: Guid(2a181f44275e5104d9ca94cf8cec87e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dimensional Developer/Tank Builder/Third-Party Notices.txt using Guid(2a181f44275e5104d9ca94cf8cec87e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c008d118ca5ced60a970952a08073d17') in 0.028645 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.491634 seconds.
+  path: Assets/Dimensional Developer/Tank Builder/Readme.txt
+  artifactKey: Guid(c4278b4fb5df7b84697bce997d107f13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dimensional Developer/Tank Builder/Readme.txt using Guid(c4278b4fb5df7b84697bce997d107f13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3db5597e01bd7df7f03e3f5ba7ec5ff9') in 0.005123 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.435324 seconds.
+  path: Assets/Dimensional Developer/Tank Builder/_Documentation_
+  artifactKey: Guid(ba367d1ae63d47345baac2cfc7e3171f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dimensional Developer/Tank Builder/_Documentation_ using Guid(ba367d1ae63d47345baac2cfc7e3171f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35d34b6ad1d64a224ff493c9a0e3ff3f') in 0.005040 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.873544 seconds.
+  path: Assets/Dimensional Developer/Tank Builder/Scripts
+  artifactKey: Guid(af6434033ce7b754da1bf0b32ceb702e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dimensional Developer/Tank Builder/Scripts using Guid(af6434033ce7b754da1bf0b32ceb702e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd6c6a007a97d1ec659adab9d6653ea1') in 0.004907 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.869360 seconds.
+  path: Assets/Dimensional Developer/Tank Builder/Scripts/Editor
+  artifactKey: Guid(72c53582b9d479b4e965703c21fb0ce8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dimensional Developer/Tank Builder/Scripts/Editor using Guid(72c53582b9d479b4e965703c21fb0ce8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5ce9715bfaef38b4c45a55668c418c7') in 0.005000 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.221242 seconds.
+  path: Assets/Dimensional Developer/Tank Builder/Scripts/Editor/AssetManagerInspector.cs
+  artifactKey: Guid(22cd7565d62a4905875bfa45ab699beb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dimensional Developer/Tank Builder/Scripts/Editor/AssetManagerInspector.cs using Guid(22cd7565d62a4905875bfa45ab699beb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33b76354dc40fa1cc1986e330eae8ab1') in 0.006799 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.931356 seconds.
+  path: Assets/Dimensional Developer/Tank Builder/Scripts/Editor/TankControllerInspector.cs
+  artifactKey: Guid(d96d434366d14c63b0694c282cc33104) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dimensional Developer/Tank Builder/Scripts/Editor/TankControllerInspector.cs using Guid(d96d434366d14c63b0694c282cc33104) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d25d26dfd47667c334324888a9824d4') in 0.005482 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.434550 seconds.
+  path: Assets/Dimensional Developer/Tank Builder/Scripts/Editor/WeaponControllerInspector.cs
+  artifactKey: Guid(01d5103f8da74b9ba28e13974dcfb80a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dimensional Developer/Tank Builder/Scripts/Editor/WeaponControllerInspector.cs using Guid(01d5103f8da74b9ba28e13974dcfb80a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '075859dde53ca1454ba43a9be95128bd') in 0.004801 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.499106 seconds.
+  path: Assets/Dimensional Developer/Tank Builder/Scripts/Editor/TankBuilderInspector.cs
+  artifactKey: Guid(d127e324373c4ee18303619df04987eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dimensional Developer/Tank Builder/Scripts/Editor/TankBuilderInspector.cs using Guid(d127e324373c4ee18303619df04987eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10c54ffcdda7defa7c9dfa93cf0d02e2') in 0.004968 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.172072 seconds.
+  path: Assets/Dimensional Developer/Tank Builder/Scripts/Editor/RecorderInspector.cs
+  artifactKey: Guid(ff7dadc7d3c4d6c4688b86f4ade5c8d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dimensional Developer/Tank Builder/Scripts/Editor/RecorderInspector.cs using Guid(ff7dadc7d3c4d6c4688b86f4ade5c8d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bfd603278ceb859821f1274551d5669') in 0.005113 seconds 
