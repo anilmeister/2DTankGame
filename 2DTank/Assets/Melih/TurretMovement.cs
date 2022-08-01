@@ -7,8 +7,9 @@ public class TurretMovement : MonoBehaviour
 {
 
     public Transform tank;
-
+    public Camera mainCamera;
     public float offset = 90f;
+    public float rotation_z;
     //Vector2 mousePos;
     public float rotationSpeed;
 
@@ -20,10 +21,22 @@ public class TurretMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition); //- transform.position;
-        difference.Normalize();
-        float rotation_z = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0f, 0f, rotation_z - offset);
+        
+        Vector3 mousePosition = Input.mousePosition;
+        mousePosition.z = mainCamera.nearClipPlane;
+        Vector2 mouseWorldPosition = mainCamera.ScreenToWorldPoint(mousePosition);
+
+        var turretDirection = (Vector3)mouseWorldPosition - transform.position;
+
+        var desiredAngle = Mathf.Atan2(turretDirection.y, turretDirection.x) * Mathf.Rad2Deg;
+
+        var rotationStep = rotationSpeed * Time.deltaTime;
+
+        transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0, 0, desiredAngle - offset), rotationStep);
+    }
+    private void FixedUpdate()
+    {
+        //transform.rotation = Quaternion.Euler(0f, 0f, rotation_z - offset);
         transform.position = tank.position;
     }
 }
