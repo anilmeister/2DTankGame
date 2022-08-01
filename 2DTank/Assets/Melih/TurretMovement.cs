@@ -26,12 +26,17 @@ public class TurretMovement : MonoBehaviour
         mousePosition.z = mainCamera.nearClipPlane;
         Vector2 mouseWorldPosition = mainCamera.ScreenToWorldPoint(mousePosition);
 
+
+        //Getting the direction needed to turn   (Mouse position - turret position)
         var turretDirection = (Vector3)mouseWorldPosition - transform.position;
 
+        // Atan2 => radian between x,y converted to degree
         var desiredAngle = Mathf.Atan2(turretDirection.y, turretDirection.x) * Mathf.Rad2Deg;
 
+        //Multiplying with deltatime
         var rotationStep = rotationSpeed * Time.deltaTime;
 
+        //Rotating the turret with rotation speed
         transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0, 0, desiredAngle - offset), rotationStep);
     }
     private void FixedUpdate()

@@ -18,7 +18,9 @@ public class MoveScript : MonoBehaviour
     public ParticleSystem tankTrail;
     public Rigidbody2D rb;
 
-   
+
+
+    public ParticleSystem smoke;
    
 
     // Update is called once per frame
@@ -36,6 +38,15 @@ public class MoveScript : MonoBehaviour
         //X a-d
         movement.y = Input.GetAxisRaw("Vertical");
         movement.x = Input.GetAxisRaw("Horizontal");
+        if (movement.y == 0 && movement.x == 0)
+        {
+            smoke.Stop();
+
+        }
+        else
+        {
+            smoke.Play();
+        }
         MoveCalc();
     }
 
@@ -54,6 +65,7 @@ public class MoveScript : MonoBehaviour
                 currentSpeed = 0;
             forwardDirection = -1;
         }
+        
     }
 
     private void CalculateSpeed()
