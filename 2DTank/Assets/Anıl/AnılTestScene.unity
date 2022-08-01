@@ -286,6 +286,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 20, y: 26.46}
   m_EdgeRadius: 0
+--- !u!50 &679335737 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 3424239854702652297, guid: 4fd33a49a145d154ba711616fdb76c19, type: 3}
+  m_PrefabInstance: {fileID: 1740027472}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &707976495
 GameObject:
   m_ObjectHideFlags: 0
@@ -477,6 +482,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 44687388564916628, guid: 4fd33a49a145d154ba711616fdb76c19, type: 3}
+      propertyPath: enemyTank
+      value: 
+      objectReference: {fileID: 679335737}
+    - target: {fileID: 44687388564916628, guid: 4fd33a49a145d154ba711616fdb76c19, type: 3}
+      propertyPath: playerTank
+      value: 
+      objectReference: {fileID: 98241053}
     - target: {fileID: 3424239854702652296, guid: 4fd33a49a145d154ba711616fdb76c19, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -529,5 +542,13 @@ PrefabInstance:
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 707976497}
+    - target: {fileID: 7672376931787051503, guid: 4fd33a49a145d154ba711616fdb76c19, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 98241053}
+    - target: {fileID: 7672376931787051503, guid: 4fd33a49a145d154ba711616fdb76c19, type: 3}
+      propertyPath: getSight
+      value: 
+      objectReference: {fileID: 679335730}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4fd33a49a145d154ba711616fdb76c19, type: 3}
