@@ -15,7 +15,7 @@ public class TurretMovement : MonoBehaviour
 
     private void Start()
     {
-        rotationSpeed = 5f;
+        rotationSpeed = 70f;
     }
 
     // Update is called once per frame

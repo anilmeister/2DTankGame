@@ -341,6 +341,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2049203222225855919, guid: 5a3d4d6923558ae48b549e9dac29fd4c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049203222225855919, guid: 5a3d4d6923558ae48b549e9dac29fd4c, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 707976497}
+    - target: {fileID: 2049203222225855919, guid: 5a3d4d6923558ae48b549e9dac29fd4c, type: 3}
+      propertyPath: rotationSpeed
+      value: 70
+      objectReference: {fileID: 0}
     - target: {fileID: 2049203222279951273, guid: 5a3d4d6923558ae48b549e9dac29fd4c, type: 3}
       propertyPath: m_Name
       value: TankV3
