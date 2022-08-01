@@ -19,7 +19,7 @@ public class MoveScript : MonoBehaviour
     public Rigidbody2D rb;
 
 
-
+    private float stopSmokeTime = 1f * Time.deltaTime;
     public ParticleSystem smoke;
    
 
@@ -40,7 +40,12 @@ public class MoveScript : MonoBehaviour
         movement.x = Input.GetAxisRaw("Horizontal");
         if (movement.y == 0 && movement.x == 0)
         {
-            smoke.Stop();
+
+            if (smoke.IsAlive())
+            {
+                Invoke("SmokeStop", 3f);
+                
+            }
 
         }
         else
@@ -49,6 +54,12 @@ public class MoveScript : MonoBehaviour
         }
         MoveCalc();
     }
+
+    private void SmokeStop()
+    {
+        smoke.Stop();
+    }
+
 
     public void MoveCalc()
     {
