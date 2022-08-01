@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 //using UnityEngine.Inp;
 
@@ -9,8 +7,6 @@ public class TurretMovement : MonoBehaviour
     public Transform tank;
     public Camera mainCamera;
     public float offset = 90f;
-    public float rotation_z;
-    //Vector2 mousePos;
     public float rotationSpeed;
 
     private void Start()
