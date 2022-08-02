@@ -248,7 +248,9 @@ MonoBehaviour:
   rotationSpeed: 60
   tankTrail: {fileID: 0}
   enemyTank: {fileID: 0}
+  playerCollider: {fileID: 0}
   playerTank: {fileID: 0}
+  tankForward: {fileID: 0}
   agent: {fileID: 0}
   playerInSightRange: 20
   playerInAttackRange: 10

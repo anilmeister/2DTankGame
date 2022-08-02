@@ -32,6 +32,7 @@ public class EnemyTurret : MonoBehaviour
 
             //Rotating the turret with rotation speed
             transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0, 0, desiredAngle - offset), rotationStep);
+            //Quaternion.
         }
     }
 

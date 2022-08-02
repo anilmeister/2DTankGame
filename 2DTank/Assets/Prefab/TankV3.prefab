@@ -5029,7 +5029,6 @@ MonoBehaviour:
   tank: {fileID: 2049203222279951276}
   mainCamera: {fileID: 0}
   offset: 90
-  rotation_z: 0
   rotationSpeed: 5
 --- !u!1 &2049203222279951273
 GameObject:
@@ -5136,7 +5135,7 @@ MonoBehaviour:
   movementSpeed: 450
   maxSpeed: 450
   currentSpeed: 0
-  acceleration: 70
+  acceleration: 70.19
   deacceleration: 50
   forwardDirection: 1
   rotation: 0
