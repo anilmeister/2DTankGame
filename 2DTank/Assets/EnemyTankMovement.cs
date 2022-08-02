@@ -20,7 +20,9 @@ public class EnemyTankMovement : MonoBehaviour
 
     [Header("Physics")]
     public Rigidbody2D enemyTank;
+    [SerializeField] BoxCollider2D playerCollider;
     [SerializeField] private Transform playerTank;
+    [SerializeField] Transform tankForward;
     public NavMeshAgent agent;
 
     [Header("Range")]
@@ -47,14 +49,14 @@ public class EnemyTankMovement : MonoBehaviour
 
     public bool isPlayerInSightRange()
     {
-        //iki türlü yapýlabilir Vector3.Distance(transform.position, playerTank.position);
+        //Can be done like this too Vector3.Distance(transform.position, playerTank.position);
         if (Mathf.Abs((transform.position - playerTank.position).magnitude) < playerInSightRange)
             return true;
         return false;
     }
     public bool isPlayerInAttackRange()
     {
-        //iki türlü yapýlabilir Vector3.Distance(transform.position, playerTank.position);
+        //Can be done like this too Vector3.Distance(transform.position, playerTank.position);
         if (Mathf.Abs((transform.position - playerTank.position).magnitude) < playerInAttackRange)
             return true;
         return false;
@@ -63,7 +65,7 @@ public class EnemyTankMovement : MonoBehaviour
 
     private void Update()
     {
-        //agent.SetDestination(playerTank.position);
+       
         if (currentSpeed == 0 && currentSpeed == 0)
         {
             smoke.Stop();
@@ -73,9 +75,6 @@ public class EnemyTankMovement : MonoBehaviour
         {
             smoke.Play();
         }
-        //MoveCalc();
-
-
         if (!isPlayerInSightRange())
         {
             MoveTowards = false;
@@ -91,7 +90,7 @@ public class EnemyTankMovement : MonoBehaviour
             else
             {
                 ChasePlayer();
-                //MoveTowards = true;
+                MoveTowards = true;
             }
         }
 
@@ -100,11 +99,11 @@ public class EnemyTankMovement : MonoBehaviour
 
     public void ChasePlayer()
     {
-        //Debug.Log("Chasing player");
-
+        Debug.Log("Chasing player");
         rotateTowards();
 
-        //Debug.Log("Finished");
+
+        //if navmesh can be done 
         //agent.SetDestination(playerTank.position);
 
     }
@@ -118,38 +117,44 @@ public class EnemyTankMovement : MonoBehaviour
         var rotationStep = rotationSpeed * Time.deltaTime;
         //Rotating the turret with rotation speed
         transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0, 0, desiredAngle - 90), rotationStep);
-        if (transform.rotation.z == desiredAngle - 90)
+        /*
+         * This doesnt work if 
+        if (desiredAngle == 0)
         {
             Debug.Log("Finished");
             MoveTowards = true;
 
         }
-        
+        */
     }
 
     private void FixedUpdate()
     {
         Vector3 moveSpeed = transform.position - playerTank.position;
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, enemyTank.transform.forward);
+        /*
+        Raycast doesnt work idk why
+        Need to improve and make the enemy tank move only when facing towards the player
+
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, tankForward.position);
+        //RaycastHit2D hit1 = Physics2D.Linecast(transform.position, tankForward.position);
         //playerTank.
         // If it hits something...
-        if (hit.collider == playerTank)
+        if (hit.collider == playerCollider)
         {
             MoveTowards = true;
-            
+            Debug.Log("Raycast hit player = " + hit.collider.name);
         }
         else
         {
-            MoveTowards = false;
+            //MoveTowards = false;
             //Debug.Log(hit.collider.name);
-            Debug.Log("Start pos = " +enemyTank.transform.position + "Direction" + "empty" + " Collision name = " + hit.collider.name);
+            //Debug.Log("Start pos = " +enemyTank.transform.position + "Direction" + "empty" + " Collision name = " + hit.collider.name);
             //hit.
             //Debug.DrawRay(hit.origin, hit.direction, Color.red, 10.0f);
         }
 
+        */
         if (MoveTowards)
-        enemyTank.MovePosition(transform.position + (-moveSpeed / 10) * Time.deltaTime);
-        //enemyTank.AddForce(transform.up * currentSpeed, ForceMode2D.Force);
-        //enemyTank.velocity = (Vector2)transform.up * currentSpeed * forwardDirection * Time.fixedDeltaTime;
+            enemyTank.MovePosition(transform.position + (-moveSpeed / 8) * Time.deltaTime);
     }
 }

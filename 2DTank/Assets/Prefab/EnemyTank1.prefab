@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2918276818825932215
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3245050067666993728}
+  m_Layer: 0
+  m_Name: TankForward
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3245050067666993728
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2918276818825932215}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2, y: 53.1, z: -2.2938294}
+  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3424239854702652296}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3424239853449362839
 GameObject:
   m_ObjectHideFlags: 0
@@ -119,6 +150,7 @@ Transform:
   - {fileID: 6541458762895220055}
   - {fileID: 3424239854757076365}
   - {fileID: 8766275967227408881}
+  - {fileID: 3245050067666993728}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -215,7 +247,13 @@ MonoBehaviour:
   rotation: 0
   rotationSpeed: 60
   tankTrail: {fileID: 0}
-  EnemyTank: {fileID: 0}
+  enemyTank: {fileID: 0}
+  playerTank: {fileID: 0}
+  agent: {fileID: 0}
+  playerInSightRange: 20
+  playerInAttackRange: 10
+  readyToAttack: 0
+  MoveTowards: 0
   smoke: {fileID: 0}
 --- !u!1 &3424239854757076364
 GameObject:
@@ -341,6 +379,7 @@ MonoBehaviour:
   player: {fileID: 0}
   offset: 90
   rotationSpeed: 60
+  getSight: {fileID: 0}
 --- !u!1 &3424239855129645871
 GameObject:
   m_ObjectHideFlags: 0
