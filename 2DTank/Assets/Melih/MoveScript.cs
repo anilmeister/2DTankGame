@@ -19,7 +19,8 @@ public class MoveScript : MonoBehaviour
     public Rigidbody2D rb;
 
 
-    private float stopSmokeTime = 1f * Time.deltaTime;
+    //private float stopSmokeTime = 1f * Time.deltaTime;
+    private float stopSmokeTime = 1f;
     public ParticleSystem smoke;
    
 
@@ -29,6 +30,7 @@ public class MoveScript : MonoBehaviour
     {
         movementSpeed = 450f;
         rotationSpeed = 60f;
+        stopSmokeTime = 1f * Time.deltaTime;
     }
 
 
@@ -50,6 +52,7 @@ public class MoveScript : MonoBehaviour
         }
         else
         {
+            // smoke.Res
             smoke.Play();
         }
         MoveCalc();
