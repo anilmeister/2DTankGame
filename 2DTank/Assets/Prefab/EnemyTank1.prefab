@@ -256,6 +256,7 @@ GameObject:
   - component: {fileID: 3424239854702652299}
   - component: {fileID: 3424239854702652297}
   - component: {fileID: 44687388564916628}
+  - component: {fileID: 6275210222302950728}
   m_Layer: 0
   m_Name: EnemyTank1
   m_TagString: Untagged
@@ -377,7 +378,7 @@ MonoBehaviour:
   rotation: 0
   rotationSpeed: 60
   tankTrail: {fileID: 0}
-  enemyTank: {fileID: 0}
+  enemyTank: {fileID: 3424239854702652297}
   playerCollider: {fileID: 0}
   playerTank: {fileID: 0}
   tankForward: {fileID: 0}
@@ -386,7 +387,33 @@ MonoBehaviour:
   playerInAttackRange: 10
   readyToAttack: 0
   MoveTowards: 0
-  smoke: {fileID: 0}
+  smoke: {fileID: 1217975419766621401}
+--- !u!61 &6275210222302950728
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3424239854702652301}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 20, y: 26.46}
+    newSize: {x: 20, y: 26.46}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 20, y: 26.46}
+  m_EdgeRadius: 0
 --- !u!1 &3424239854757076364
 GameObject:
   m_ObjectHideFlags: 0
