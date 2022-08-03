@@ -15,7 +15,7 @@ public class MoveScript : MonoBehaviour
     public float rotation;
     public float rotationSpeed;
     //public float move;
-    public ParticleSystem tankTrail;
+    //public ParticleSystem tankTrail;
     public Rigidbody2D rb;
 
 
