@@ -47,6 +47,24 @@ TagManager:
   - name: DetailsBottom
     uniqueID: 2974560315
     locked: 0
+  - name: Enemies
+    uniqueID: 949272785
+    locked: 0
   - name: Player
     uniqueID: 886044081
+    locked: 0
+  - name: Items
+    uniqueID: 747216431
+    locked: 0
+  - name: Bullets
+    uniqueID: 1366961977
+    locked: 0
+  - name: Effects
+    uniqueID: 785409055
+    locked: 0
+  - name: DetailsTop
+    uniqueID: 368942525
+    locked: 0
+  - name: UI
+    uniqueID: 1704955291
     locked: 0

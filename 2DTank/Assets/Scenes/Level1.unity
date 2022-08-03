@@ -140,7 +140,7 @@ PrefabInstance:
       objectReference: {fileID: 1151828815}
     - target: {fileID: 5879377503365741516, guid: dd6e7a5f31ef56d4ab575c9b8da2b928, type: 3}
       propertyPath: m_Lens.m_SensorSize.x
-      value: 0.96407187
+      value: 0.89944136
       objectReference: {fileID: 0}
     - target: {fileID: 5879377503365741517, guid: dd6e7a5f31ef56d4ab575c9b8da2b928, type: 3}
       propertyPath: m_RootOrder
@@ -188,6 +188,96 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd6e7a5f31ef56d4ab575c9b8da2b928, type: 3}
+--- !u!1 &178357047
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 178357049}
+  - component: {fileID: 178357048}
+  m_Layer: 0
+  m_Name: AssetManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &178357048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178357047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da30a4790e8ae064da8e7ad8f7baf6cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  assets: []
+--- !u!4 &178357049
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178357047}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &222143379
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 222143381}
+  - component: {fileID: 222143380}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &222143380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 222143379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c057cdf3ee00264b91e5f221a534e44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds: []
+--- !u!4 &222143381
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 222143379}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &336311453
 GameObject:
   m_ObjectHideFlags: 0
@@ -10350,7 +10440,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4175414396769387081, guid: be2e8d6cad23e5c45b8659be1993bba0, type: 3}
       propertyPath: m_SortingLayer
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4175414396769387081, guid: be2e8d6cad23e5c45b8659be1993bba0, type: 3}
       propertyPath: m_SortingOrder
@@ -10410,7 +10500,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4175414396823237704, guid: be2e8d6cad23e5c45b8659be1993bba0, type: 3}
       propertyPath: m_SortingLayer
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4175414396823237704, guid: be2e8d6cad23e5c45b8659be1993bba0, type: 3}
       propertyPath: m_SortingLayerID
@@ -10422,15 +10512,35 @@ PrefabInstance:
       objectReference: {fileID: 1263501121}
     - target: {fileID: 4175414397189520111, guid: be2e8d6cad23e5c45b8659be1993bba0, type: 3}
       propertyPath: m_SortingLayer
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4175414397189520111, guid: be2e8d6cad23e5c45b8659be1993bba0, type: 3}
       propertyPath: m_SortingLayerID
       value: 886044081
       objectReference: {fileID: 0}
+    - target: {fileID: 4175414398734636118, guid: be2e8d6cad23e5c45b8659be1993bba0, type: 3}
+      propertyPath: m_SortingLayer
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4175414398734636118, guid: be2e8d6cad23e5c45b8659be1993bba0, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4175414398734636118, guid: be2e8d6cad23e5c45b8659be1993bba0, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 886044081
+      objectReference: {fileID: 0}
+    - target: {fileID: 4175414398734636119, guid: be2e8d6cad23e5c45b8659be1993bba0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4175414398734636119, guid: be2e8d6cad23e5c45b8659be1993bba0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.2
+      objectReference: {fileID: 0}
     - target: {fileID: 5526122707185890450, guid: be2e8d6cad23e5c45b8659be1993bba0, type: 3}
       propertyPath: m_SortingLayer
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5526122707185890450, guid: be2e8d6cad23e5c45b8659be1993bba0, type: 3}
       propertyPath: m_SortingLayerID
@@ -10438,7 +10548,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9026030651239931799, guid: be2e8d6cad23e5c45b8659be1993bba0, type: 3}
       propertyPath: m_SortingLayer
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 9026030651239931799, guid: be2e8d6cad23e5c45b8659be1993bba0, type: 3}
       propertyPath: m_SortingLayerID
