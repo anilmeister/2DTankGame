@@ -7,7 +7,7 @@ public class TrackMarkSpawner : MonoBehaviour
     // Start is called before the first frame update
 
     private Vector2 lastPosition;
-    public float trackDistance = 0.2f;
+    public float trackDistance = 2f;
     public GameObject trackPrefab;
     public int objectPoolSize = 20;
 
@@ -28,7 +28,7 @@ public class TrackMarkSpawner : MonoBehaviour
     {
         var distanceDriven = Vector2.Distance(transform.position, lastPosition);
 
-        if (distanceDriven >= trackDistance)
+        if (distanceDriven > trackDistance)
         {
             lastPosition = transform.position;
             var tracks = objectPool.CreateObject();

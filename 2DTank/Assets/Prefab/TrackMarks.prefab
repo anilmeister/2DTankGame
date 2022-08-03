@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e90e2000691375c4c81833e2b46223f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackDistance: 0.2
+  trackDistance: 1
   trackPrefab: {fileID: 6780697377128859848, guid: 18dde85001178a944a7afcc57d6ab139, type: 3}
   objectPoolSize: 20
 --- !u!114 &1998837479142804160
