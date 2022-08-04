@@ -70,17 +70,7 @@ public class Shooting : MonoBehaviour
        rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
 
     }
-    void MachineGun()
-    {
-        GameObject effect = Instantiate(machineGunMuzzleFlash, machineGun.position, Quaternion.identity);
-        Destroy(effect, 0.2f);
-        //GameObject bullet = Instantiate(mgBulletPrefab, machineGun.position, machineGun.rotation);
-        var bullet = mgObjectPool.CreateObject();
-        bullet.transform.position = machineGun.position;
-        bullet.transform.rotation = machineGun.rotation;
-        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-        rb.AddForce(machineGun.up * bulletForce, ForceMode2D.Impulse);
-    }
+
 
 
 }

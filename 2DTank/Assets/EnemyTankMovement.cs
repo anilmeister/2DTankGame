@@ -49,6 +49,8 @@ public class EnemyTankMovement : MonoBehaviour
 
     public bool isPlayerInSightRange()
     {
+        if (playerTank == null)
+            return false;
         //Can be done like this too Vector3.Distance(transform.position, playerTank.position);
         if (Mathf.Abs((transform.position - playerTank.position).magnitude) < playerInSightRange)
             return true;
@@ -56,6 +58,8 @@ public class EnemyTankMovement : MonoBehaviour
     }
     public bool isPlayerInAttackRange()
     {
+        if (playerTank == null)
+            return false;
         //Can be done like this too Vector3.Distance(transform.position, playerTank.position);
         if (Mathf.Abs((transform.position - playerTank.position).magnitude) < playerInAttackRange)
             return true;
@@ -75,31 +79,33 @@ public class EnemyTankMovement : MonoBehaviour
         {
             smoke.Play();
         }
-        if (!isPlayerInSightRange())
+        if (playerTank != null)
         {
-            MoveTowards = false;
-            //idle()
-        }
-        else
-        {
-            if (isPlayerInAttackRange())
+            if (!isPlayerInSightRange())
             {
                 MoveTowards = false;
-                //attack()
+                //idle()
             }
             else
             {
-                ChasePlayer();
-                MoveTowards = true;
+                if (isPlayerInAttackRange())
+                {
+                    MoveTowards = false;
+                    //attack()
+                }
+                else
+                {
+                    ChasePlayer();
+                    MoveTowards = true;
+                }
             }
         }
-
     }
 
 
     public void ChasePlayer()
     {
-        Debug.Log("Chasing player");
+        //Debug.Log("Chasing player");
         rotateTowards();
 
 
@@ -130,7 +136,14 @@ public class EnemyTankMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Vector3 moveSpeed = transform.position - playerTank.position;
+
+        if (playerTank != null)
+        {
+            Vector3 moveSpeed = transform.position - playerTank.position;
+
+            if (MoveTowards)
+                enemyTank.MovePosition(transform.position + (-moveSpeed / 8) * Time.deltaTime);
+        }
         /*
         Raycast doesnt work idk why
         Need to improve and make the enemy tank move only when facing towards the player
@@ -154,7 +167,5 @@ public class EnemyTankMovement : MonoBehaviour
         }
 
         */
-        if (MoveTowards)
-            enemyTank.MovePosition(transform.position + (-moveSpeed / 8) * Time.deltaTime);
     }
 }

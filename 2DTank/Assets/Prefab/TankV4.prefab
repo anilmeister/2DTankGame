@@ -5005,6 +5005,7 @@ GameObject:
   - component: {fileID: 4175414396769387080}
   - component: {fileID: 4175414396769387083}
   - component: {fileID: 2702782360722382185}
+  - component: {fileID: 3382505899133826673}
   m_Layer: 0
   m_Name: TankV4
   m_TagString: Untagged
@@ -5153,6 +5154,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 20, y: 26.46}
   m_EdgeRadius: 0
+--- !u!114 &3382505899133826673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4175414396769387087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e64cd92c79354246b63c6289c4fbde7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 0
+  currentHealth: 10
+  deathExplosion: {fileID: 0}
+  HealthFill:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &4175414396823237710
 GameObject:
   m_ObjectHideFlags: 0

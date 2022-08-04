@@ -6,7 +6,7 @@ public class Bullet : MonoBehaviour
 {
 
     public GameObject hitEffect;
-    public int damage;
+    public float damage;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -16,7 +16,7 @@ public class Bullet : MonoBehaviour
 
 
         if (collision != null)
-            if (collision.gameObject.tag == "Enemy")
+            if (collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "Player")
                 collision.gameObject.GetComponent<TankHealthSystem>().damagePlayer(damage);
 
     }
