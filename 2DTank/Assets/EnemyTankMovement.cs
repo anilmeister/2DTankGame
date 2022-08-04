@@ -23,7 +23,7 @@ public class EnemyTankMovement : MonoBehaviour
     [SerializeField] BoxCollider2D playerCollider;
     [SerializeField] private Transform playerTank;
     [SerializeField] Transform tankForward;
-    public NavMeshAgent agent;
+    //public NavMeshAgent agent;
 
     [Header("Range")]
     public float playerInSightRange = 20f;
@@ -41,9 +41,9 @@ public class EnemyTankMovement : MonoBehaviour
 
     private void Start()
     {
-        agent = GetComponent<NavMeshAgent>();
-        agent.updateRotation = false;
-        agent.updateUpAxis = false;
+        //agent = GetComponent<NavMeshAgent>();
+        //agent.updateRotation = false;
+        //agent.updateUpAxis = false;
     }
 
 

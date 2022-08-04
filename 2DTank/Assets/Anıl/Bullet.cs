@@ -12,8 +12,12 @@ public class Bullet : MonoBehaviour
     {
             GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
             Destroy(effect, 5f);
-            Destroy(gameObject);
-        collision.gameObject.GetComponent<TankHealthSystem>().damagePlayer(damage);
+            gameObject.SetActive(false);
+
+
+        if (collision != null)
+            if (collision.gameObject.tag == "Enemy")
+                collision.gameObject.GetComponent<TankHealthSystem>().damagePlayer(damage);
 
     }
   

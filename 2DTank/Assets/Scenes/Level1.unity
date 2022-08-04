@@ -237,11 +237,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5879377503365741517, guid: dd6e7a5f31ef56d4ab575c9b8da2b928, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -49.66
+      value: -52.11
       objectReference: {fileID: 0}
     - target: {fileID: 5879377503365741517, guid: dd6e7a5f31ef56d4ab575c9b8da2b928, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -62.6
+      value: -43.98
       objectReference: {fileID: 0}
     - target: {fileID: 5879377503365741517, guid: dd6e7a5f31ef56d4ab575c9b8da2b928, type: 3}
       propertyPath: m_LocalPosition.z
@@ -339,22 +339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5639307802c64864694d426b0dd3db38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToPool: {fileID: 0}
-  poolSize: 10
-  spawnedObjectsParent: {fileID: 0}
---- !u!114 &183624283
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 183624279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5639307802c64864694d426b0dd3db38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectToPool: {fileID: 0}
+  objectToPool: {fileID: 8860984114710999261, guid: 3cd6fb51ba71ed24fb1012183e649c17, type: 3}
   poolSize: 10
   spawnedObjectsParent: {fileID: 0}
 --- !u!1 &222143379
@@ -10148,6 +10133,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 20, y: 26.46}
   m_EdgeRadius: 0
+--- !u!114 &396422392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 396422382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e64cd92c79354246b63c6289c4fbde7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 20
+  currentHealth: 20
+  deathExplosion: {fileID: 0}
 --- !u!1 &769920210
 GameObject:
   m_ObjectHideFlags: 0
@@ -17942,7 +17942,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1263501119}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -49.66, y: -62.6, z: -10}
+  m_LocalPosition: {x: -52.11, y: -43.98, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18008,11 +18008,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4175414396769387082, guid: be2e8d6cad23e5c45b8659be1993bba0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -49.66
+      value: -52.11
       objectReference: {fileID: 0}
     - target: {fileID: 4175414396769387082, guid: be2e8d6cad23e5c45b8659be1993bba0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -62.6
+      value: -43.98
       objectReference: {fileID: 0}
     - target: {fileID: 4175414396769387082, guid: be2e8d6cad23e5c45b8659be1993bba0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -18097,6 +18097,14 @@ PrefabInstance:
     - target: {fileID: 5526122707185890450, guid: be2e8d6cad23e5c45b8659be1993bba0, type: 3}
       propertyPath: m_SortingLayerID
       value: 886044081
+      objectReference: {fileID: 0}
+    - target: {fileID: 6480699637641067721, guid: be2e8d6cad23e5c45b8659be1993bba0, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6480699637641067721, guid: be2e8d6cad23e5c45b8659be1993bba0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9026030651239931799, guid: be2e8d6cad23e5c45b8659be1993bba0, type: 3}
       propertyPath: m_SortingLayer

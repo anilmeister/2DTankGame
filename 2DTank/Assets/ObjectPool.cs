@@ -42,10 +42,10 @@ public class ObjectPool : MonoBehaviour
         }
         else
         {
-            spawnedObject = objectPool.Dequeue();
-            spawnedObject.transform.position = transform.position;
-            spawnedObject.transform.rotation = Quaternion.identity;
-            spawnedObject.SetActive(true);
+                spawnedObject = objectPool.Dequeue();
+                spawnedObject.transform.position = transform.position;
+                spawnedObject.transform.rotation = Quaternion.identity;
+                spawnedObject.SetActive(true);
         }
 
         objectPool.Enqueue(spawnedObject);
