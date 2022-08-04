@@ -7,27 +7,43 @@ public class Shooting : MonoBehaviour
 
     public Transform firePoint;
     public Transform machineGun;
-    public GameObject bulletPrefab;
-    public GameObject mgBulletPrefab;
-    public GameObject muzzleFlash;
-    public GameObject machineGunMuzzleFlash;
 
+
+    [Header("Cannon Attributions")]
+    [SerializeField]
+    private GameObject bulletPrefab, mgBulletPrefab, muzzleFlash, machineGunMuzzleFlash;
 
     public float bulletForce = 20f;
+
+    public int objectPoolSize = 20;
+
+    private ObjectPool cannonObjectPool,mgObjectPool;
+
+    private void Awake()
+    {
+        mgObjectPool = GetComponent<ObjectPool>();
+        cannonObjectPool = GetComponent<ObjectPool>();
+
+    }
+
+    private void Start()
+    {
+        mgObjectPool.Initialize(mgBulletPrefab, objectPoolSize);
+        cannonObjectPool.Initialize(bulletPrefab, objectPoolSize);
+
+    }
 
 
     void Update()
     {
-
         if(Input.GetButtonDown("Fire1"))
         {
-
             Shoot();
         }
 
-        if(Input.GetButtonDown("Jump"))
+        if(Input.GetKey("space"))
         {
-            MachineGun();
+            //MachineGun();
         }
     }
 
@@ -36,7 +52,9 @@ public class Shooting : MonoBehaviour
     {
        GameObject effect = Instantiate(muzzleFlash, transform.position, Quaternion.identity);
        Destroy(effect, 0.2f);
-        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+       var bullet = cannonObjectPool.CreateObject();
+       bullet.transform.position = firePoint.position;
+       bullet.transform.rotation = firePoint.rotation; 
        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
        rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
 
@@ -45,7 +63,10 @@ public class Shooting : MonoBehaviour
     {
         GameObject effect = Instantiate(machineGunMuzzleFlash, machineGun.position, Quaternion.identity);
         Destroy(effect, 0.2f);
-        GameObject bullet = Instantiate(mgBulletPrefab, machineGun.position, machineGun.rotation);
+        //GameObject bullet = Instantiate(mgBulletPrefab, machineGun.position, machineGun.rotation);
+        var bullet = mgObjectPool.CreateObject();
+        bullet.transform.position = machineGun.position;
+        bullet.transform.rotation = machineGun.rotation;
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.AddForce(machineGun.up * bulletForce, ForceMode2D.Impulse);
     }
