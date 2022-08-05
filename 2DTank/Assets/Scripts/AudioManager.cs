@@ -1,29 +1,46 @@
 
 using UnityEngine;
+using System;
 using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
     // Start is called before the first frame update
 
+    //Sound array
     public Sounds[] sounds;
+
+    public static AudioManager instance;
 
     private void Awake()
     {
-        foreach( Sounds s in sounds )
+        if (instance == null)
+            instance = this;
+        else
         {
-            //s.source = gameObject.AddComponent<AudioSource>();
+            Destroy(gameObject);
+            return;
+        }
+
+
+        DontDestroyOnLoad(gameObject);
+        foreach ( Sounds s in sounds )
+        {
+          
+            s.audioSource = gameObject.AddComponent<AudioSource>(); 
+            s.audioSource.clip = s.audioClip;
+            s.audioSource.volume = s.volume;
+            s.audioSource.pitch = s.pitch;
+            s.audioSource.loop = s.loop;
         }
     }
 
-    void Start()
+
+    public void Play (string name)
     {
-        
+        //FindObjectOfType<AudioManager>().Play("PlayerDeath");
+        Sounds s = Array.Find(sounds, s => s.name == name);
+        s.audioSource.Play();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

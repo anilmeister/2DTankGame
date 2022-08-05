@@ -2,17 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
+[System.Serializable]
 public class Sounds : MonoBehaviour
 {
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public string audioName;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public bool loop;
+
+    public AudioClip audioClip;
+
+    [Range(0f, 1f)]
+    public float volume;
+    [Range (.1f, 5f)]
+    public float pitch;
+
+
+    [HideInInspector]
+    public AudioSource audioSource;
+
 }

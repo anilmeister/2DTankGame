@@ -11,10 +11,11 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.sceneLoaded += Initialize;
         DontDestroyOnLoad(gameObject);
+        //FindObjectOfType<AudioManager>().Play("ThemeMusic");
     }
 
     private void Initialize (Scene scene, LoadSceneMode sceneMode)
-    {
+    {     
         Debug.Log("Loaded GameManager");
         var playerInput = FindObjectOfType<MoveScript>();
         if (playerInput != null)
