@@ -63,6 +63,10 @@ public class TankHealthSystem : MonoBehaviour
         currentHealth -= damageTaken;
     }
 
+    public void addHealth(float value)
+    {
+        currentHealth += value;
+    }
     public void setMaxHealth()
     {
         currentHealth = maxHealth;
