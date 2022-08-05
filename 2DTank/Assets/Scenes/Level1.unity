@@ -17790,8 +17790,8 @@ GameObject:
   - component: {fileID: 1906155288}
   - component: {fileID: 1906155287}
   - component: {fileID: 1906155286}
-  - component: {fileID: 1906155285}
   - component: {fileID: 1906155289}
+  - component: {fileID: 1906155290}
   m_Layer: 0
   m_Name: HealthPickUp
   m_TagString: Untagged
@@ -17799,32 +17799,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!61 &1906155285
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1906155284}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 9, y: 5}
-    newSize: {x: 9, y: 5}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 9, y: 5}
-  m_EdgeRadius: 0
 --- !u!95 &1906155286
 Animator:
   serializedVersion: 4
@@ -17924,6 +17898,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c559b075371e89845870f6d7fb62471c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthValue: 0
+--- !u!58 &1906155290
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906155284}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 3
 --- !u!1 &2101840619
 GameObject:
   m_ObjectHideFlags: 0
@@ -18061,6 +18052,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c559b075371e89845870f6d7fb62471c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthValue: 0
 --- !u!1001 &469820862772121222
 PrefabInstance:
   m_ObjectHideFlags: 0
