@@ -16,7 +16,7 @@ public class ExilLevel : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            Debug.Log("bumbastic")
+            Debug.Log("bumbastic");
             gameManager.SaveData();
             gameManager.LoadNextLevel();
         }
