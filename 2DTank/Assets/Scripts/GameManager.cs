@@ -49,7 +49,7 @@ public class GameManager : MonoBehaviour
     {
         if (player != null)
         {
-            saveSystem.SaveData(SceneManager.GetActiveScene().buildIndex, player.GetComponent<TankHealthSystem>().currentHealth);
+            saveSystem.SaveData(SceneManager.GetActiveScene().buildIndex + 1, player.GetComponent<TankHealthSystem>().currentHealth);
         }
     }
 }
