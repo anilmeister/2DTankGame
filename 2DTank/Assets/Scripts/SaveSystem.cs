@@ -12,7 +12,57 @@ public class SaveSystem : MonoBehaviour
 
     public UnityEvent<bool> OnDataLoadedResult;
 
+    //Will load only once
     private bool isInitializes = false;
+
+
+    private void Awake()
+    {
+        //To not destroy when changing scenes
+        DontDestroyOnLoad(gameObject);
+    }
+
+    private void Start()
+    {
+        //It is a bit redundant as this is used only on start scene
+        if (isInitializes)
+            return;
+        var result = LoadData();
+        OnDataLoadedResult?.Invoke(result);
+        isInitializes = true;
+        
+
+
+    }
+    public void ResetData()
+    {
+        PlayerPrefs.DeleteKey(playerHealthKey);
+        PlayerPrefs.DeleteKey(savePresentKey);
+        PlayerPrefs.DeleteKey(sceneKey);
+        LoadedData = null;
+    }
+    public void SaveData(int sceneIndex, float playerHealth)
+    {
+        if (LoadedData == null)
+            LoadedData = new LoadedData();
+        LoadedData.playerHealth = playerHealth;
+        LoadedData.sceneIndex = sceneIndex;
+        PlayerPrefs.SetInt(savePresentKey, 1);
+        PlayerPrefs.SetFloat(playerHealthKey, playerHealth);
+        PlayerPrefs.SetInt(sceneKey, sceneIndex);
+    }
+    public bool LoadData()
+    {
+        if (PlayerPrefs.GetInt(savePresentKey) == 1)
+        {
+            LoadedData = new LoadedData();
+            LoadedData.playerHealth = PlayerPrefs.GetFloat(playerHealthKey);
+            LoadedData.sceneIndex = PlayerPrefs.GetInt(sceneKey);
+            return true;
+        }
+
+        return false;
+    }
 }
 
 
