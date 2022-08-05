@@ -63,7 +63,7 @@ public class Shooting : MonoBehaviour
        currentDelay = reloadDelay;
        GameObject effect = Instantiate(muzzleFlash, transform.position, Quaternion.identity);
        Destroy(effect, 0.2f);
-       GameObject bullet = cannonObjectPool.CreateObject();
+       var bullet = cannonObjectPool.CreateObject();
        bullet.transform.position = firePoint.position;
        bullet.transform.rotation = firePoint.rotation; 
        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
