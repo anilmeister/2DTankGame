@@ -12,10 +12,6 @@ public class SaveSystem : MonoBehaviour
 
     public UnityEvent<bool> OnDataLoadedResult;
 
-    //Will load only once
-    private bool isInitializes = false;
-
-
     private void Awake()
     {
         //To not destroy when changing scenes
@@ -24,15 +20,9 @@ public class SaveSystem : MonoBehaviour
 
     private void Start()
     {
-        //It is a bit redundant as this is used only on start scene
-        if (isInitializes)
-            return;
         var result = LoadData();
         OnDataLoadedResult?.Invoke(result);
-        isInitializes = true;
-        
-
-
+       
     }
     public void ResetData()
     {

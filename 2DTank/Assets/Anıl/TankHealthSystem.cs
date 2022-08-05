@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class TankHealthSystem : MonoBehaviour
 {
     public float maxHealth;
-    public float currentHealth = 100f;
+    public float currentHealth = 0f;
     public GameObject deathExplosion;
     public GameObject whichTank;
     public UnityEvent<float> HealthFill;
@@ -14,7 +14,8 @@ public class TankHealthSystem : MonoBehaviour
     public float delay = 2f;
     void Start()
     {
-        currentHealth = maxHealth;
+        if (currentHealth == 0f)
+            currentHealth = maxHealth;
         HealthFill?.Invoke(1);
         Debug.Log("this tank" + whichTank.tag);
     }
