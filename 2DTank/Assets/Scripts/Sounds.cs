@@ -20,7 +20,7 @@ public class Sounds : MonoBehaviour
     public float pitch;
 
 
-    [HideInInspector]
+    //[HideInInspector]
     public AudioSource audioSource;
 
 }

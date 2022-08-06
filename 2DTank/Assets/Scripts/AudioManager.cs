@@ -10,6 +10,8 @@ public class AudioManager : MonoBehaviour
     //Sound array
     public Sounds[] sounds;
 
+    public AudioClip[] clips;
+
     public static AudioManager instance;
 
     private void Awake()
@@ -25,8 +27,7 @@ public class AudioManager : MonoBehaviour
 
         DontDestroyOnLoad(gameObject);
         foreach ( Sounds s in sounds )
-        {
-          
+        {   
             s.audioSource = gameObject.AddComponent<AudioSource>(); 
             s.audioSource.clip = s.audioClip;
             s.audioSource.volume = s.volume;
@@ -42,5 +43,14 @@ public class AudioManager : MonoBehaviour
         Sounds s = Array.Find(sounds, s => s.name == name);
         s.audioSource.Play();
     }
+
+    public void PlaySound (int index)
+    {
+        GameObject soundGameObject = new GameObject("Sound");
+        AudioSource audioSource = soundGameObject.AddComponent<AudioSource>();
+        audioSource.PlayOneShot(clips[index]);
+    }
+
+
 
 }

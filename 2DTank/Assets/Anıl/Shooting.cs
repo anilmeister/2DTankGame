@@ -42,24 +42,30 @@ public class Shooting : MonoBehaviour
 
     void Update()
     {
-            if (canShoot == false)
+        if (canShoot == false)
+        {
+            currentDelay -= Time.deltaTime;
+            OnReloading.Invoke(currentDelay / reloadDelay);
+            if (currentDelay <= 0f)
             {
-                currentDelay -= Time.deltaTime;
-                OnReloading.Invoke(currentDelay / reloadDelay);
-                if (currentDelay <= 0f)
-                {
-                    canShoot = true;
-                }
+                canShoot = true;
             }
-            else if (Input.GetButtonDown("Fire1"))
-                Shoot();
+        }
+        else if (Input.GetButtonDown("Fire1"))
+        {
+            //FindObjectOfType<AudioManager>().Play("CannonSound");
+            FindObjectOfType<AudioManager>().PlaySound(1);
+            Shoot();
+
+        }
 
     }
 
 
     void Shoot()
     {
-       canShoot = false;
+
+        canShoot = false;
        currentDelay = reloadDelay;
        GameObject effect = Instantiate(muzzleFlash, transform.position, Quaternion.identity);
        Destroy(effect, 0.2f);
