@@ -15,7 +15,8 @@ public class GameManager : MonoBehaviour
     }
 
     private void Initialize (Scene scene, LoadSceneMode sceneMode)
-    {     
+    {
+        FindObjectOfType<AudioManager>().PlaySound(0);
         Debug.Log("Loaded GameManager");
         var playerInput = FindObjectOfType<MoveScript>();
         if (playerInput != null)

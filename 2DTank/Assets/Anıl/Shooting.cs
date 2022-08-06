@@ -29,7 +29,7 @@ public class Shooting : MonoBehaviour
     {
         //mgObjectPool = GetComponent<ObjectPool>();
         cannonObjectPool = GetComponent<ObjectPool>();
-
+        Cursor.visible = false;
     }
 
     private void Start()
