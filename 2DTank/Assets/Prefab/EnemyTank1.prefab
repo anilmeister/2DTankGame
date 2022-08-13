@@ -117,7 +117,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 3422168633582520261}
   m_FillRect: {fileID: 3107209917109385268}
   m_HandleRect: {fileID: 0}
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 1
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -506,6 +506,7 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 100
   deathExplosion: {fileID: 0}
+  whichTank: {fileID: 0}
   HealthFill:
     m_PersistentCalls:
       m_Calls:
@@ -520,7 +521,8 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 1
+  delay: 2
 --- !u!1 &3424239854757076364
 GameObject:
   m_ObjectHideFlags: 0
@@ -643,9 +645,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firePoint: {fileID: 3878457885916909007}
   canShoot: 1
-  mgBulletPrefab: {fileID: 0}
   muzzleFlash: {fileID: 0}
-  machineGunMuzzleFlash: {fileID: 0}
   bulletPrefab: {fileID: 8860984114710999261, guid: 3cd6fb51ba71ed24fb1012183e649c17, type: 3}
   bulletForce: 2
   objectPoolSize: 10
