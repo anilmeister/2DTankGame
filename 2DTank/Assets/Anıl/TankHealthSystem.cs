@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class TankHealthSystem : MonoBehaviour
 {
     public float maxHealth;
-    public float currentHealth = 0f;
+    public float currentHealth;
     public GameObject deathExplosion;
     public GameObject whichTank;
     public UnityEvent<float> HealthFill;
@@ -32,7 +32,7 @@ public class TankHealthSystem : MonoBehaviour
             Destroy(gameObject);
             if (whichTank.tag == "Player") {
 
-                //StartCoroutine(PlayerDeathFunc(delay));
+                StartCoroutine(PlayerDeathFunc());
                 //Invoke("RestartScene", 0f);
                 Scene thisScene = SceneManager.GetActiveScene();
                 SceneManager.LoadScene(thisScene.name);
@@ -42,7 +42,7 @@ public class TankHealthSystem : MonoBehaviour
         }
     }
 
-    IEnumerator PlayerDeathFunc(float delay)
+    IEnumerator PlayerDeathFunc()
     {
         //Print the time of when the function is first called.
         Debug.Log("Death Timestamp = " + Time.time);
