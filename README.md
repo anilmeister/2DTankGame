@@ -5,7 +5,7 @@ A simple game made to learn about Unity more
                                             Mouse to aim  
                                             Left click to shoot  
                                             Used assets =  
-                                            [Kenney Assets](https://kenney.nl/)
+                                            [Kenney Assets](https://kenney.nl/)  
                                             [Unity Tank Builder by Dimensional Developer](https://assetstore.unity.com/packages/templates/packs/2d-tank-builder-178991)
                                            
 
