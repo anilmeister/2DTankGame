@@ -14,6 +14,10 @@ public class AudioManager : MonoBehaviour
 
     public static AudioManager instance;
 
+
+    private ObjectPool pool;
+
+
     private void Awake()
     {
         if (instance == null)
@@ -34,9 +38,18 @@ public class AudioManager : MonoBehaviour
             s.audioSource.pitch = s.pitch;
             s.audioSource.loop = s.loop;
         }
+
+        pool = GetComponent<ObjectPool>();
     }
 
 
+    private void Start()
+    {
+        GameObject soundGameObject = new GameObject("Sound");
+        soundGameObject.AddComponent<AudioSource>();
+        soundGameObject.name = "Sound";
+        pool.Initialize(soundGameObject, 10);
+    }
     public void Play (string name)
     {
         //FindObjectOfType<AudioManager>().Play("PlayerDeath");
@@ -45,9 +58,9 @@ public class AudioManager : MonoBehaviour
     }
 
     public void PlaySound (int index)
-    {
-        GameObject soundGameObject = new GameObject("Sound");
-        AudioSource audioSource = soundGameObject.AddComponent<AudioSource>();
+    { 
+        GameObject soundGameObject = pool.CreateObject();
+        AudioSource audioSource = soundGameObject.GetComponent<AudioSource>();
         audioSource.volume = 0.2f;
         audioSource.PlayOneShot(clips[index]);
     }

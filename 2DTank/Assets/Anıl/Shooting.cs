@@ -55,6 +55,7 @@ public class Shooting : MonoBehaviour
         {
             //FindObjectOfType<AudioManager>().Play("CannonSound");
             FindObjectOfType<AudioManager>().PlaySound(1);
+            
             Shoot();
 
         }

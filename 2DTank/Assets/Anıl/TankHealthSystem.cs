@@ -17,7 +17,7 @@ public class TankHealthSystem : MonoBehaviour
         if (currentHealth == 0f)
             currentHealth = maxHealth;
         HealthFill?.Invoke(1);
-        Debug.Log("this tank" + whichTank.tag);
+        //Debug.Log("this tank" + whichTank.tag);
     }
 
     void Update()
