@@ -5962,6 +5962,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8860984114710999261, guid: 81bc08835aeb6744aa490506784f7ceb, type: 3}
     - target: {fileID: 4983150410961937290, guid: 427c728584e33bf4291dd720d5e2810b, type: 3}
+      propertyPath: objectPoolSize
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4983150410961937290, guid: 427c728584e33bf4291dd720d5e2810b, type: 3}
       propertyPath: machineGunMuzzleFlash
       value: 
       objectReference: {fileID: 152484, guid: 23fc589b73077394db72d954703e8d1c, type: 3}
