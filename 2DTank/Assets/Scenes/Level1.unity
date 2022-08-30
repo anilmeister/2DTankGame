@@ -331,6 +331,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2296935812181552382, guid: 4fd33a49a145d154ba711616fdb76c19, type: 3}
+      propertyPath: objectPoolSize
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3107209917109385268, guid: 4fd33a49a145d154ba711616fdb76c19, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -723,26 +727,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd6e7a5f31ef56d4ab575c9b8da2b928, type: 3}
---- !u!1 &183624279 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 691038348436882750, guid: be2e8d6cad23e5c45b8659be1993bba0, type: 3}
-  m_PrefabInstance: {fileID: 1904310724}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &183624282
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 183624279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5639307802c64864694d426b0dd3db38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectToPool: {fileID: 8860984114710999261, guid: 3cd6fb51ba71ed24fb1012183e649c17, type: 3}
-  poolSize: 3
-  spawnedObjectsParent: {fileID: 0}
 --- !u!1 &213835871 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6271487479695158645, guid: 4fd33a49a145d154ba711616fdb76c19, type: 3}
