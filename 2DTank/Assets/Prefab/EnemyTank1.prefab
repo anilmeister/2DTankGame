@@ -457,8 +457,8 @@ MonoBehaviour:
   rotationSpeed: 60
   tankTrail: {fileID: 0}
   enemyTank: {fileID: 3424239854702652297}
-  playerCollider: {fileID: 0}
-  playerTank: {fileID: 0}
+  playerCollider: {fileID: 2702782360722382185, guid: be2e8d6cad23e5c45b8659be1993bba0, type: 3}
+  playerTank: {fileID: 4175414396769387082, guid: be2e8d6cad23e5c45b8659be1993bba0, type: 3}
   tankForward: {fileID: 0}
   playerInSightRange: 20
   playerInAttackRange: 10

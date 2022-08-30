@@ -21,7 +21,7 @@ public class ObjectPool : MonoBehaviour
     }
 
 
-    public void Initialize(GameObject objectToPool, int poolSize = 10)
+    public void Initialize(GameObject objectToPool, int poolSize)
     {
         this.objectToPool = objectToPool;
         this.poolSize = poolSize;

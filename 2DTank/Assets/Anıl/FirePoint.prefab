@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4983150410961937291}
   - component: {fileID: 4983150410961937290}
+  - component: {fileID: 4141271411665098209}
   m_Layer: 0
   m_Name: FirePoint
   m_TagString: Untagged
@@ -46,8 +47,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firePoint: {fileID: 4983150410961937291}
   machineGun: {fileID: 0}
-  bulletPrefab: {fileID: 8860984114710999261, guid: 3cd6fb51ba71ed24fb1012183e649c17, type: 3}
-  mgBulletPrefab: {fileID: 8860984114710999261, guid: 81bc08835aeb6744aa490506784f7ceb, type: 3}
+  mgBulletPrefab: {fileID: 0}
   muzzleFlash: {fileID: 0}
   machineGunMuzzleFlash: {fileID: 0}
+  bulletPrefab: {fileID: 8860984114710999261, guid: 3cd6fb51ba71ed24fb1012183e649c17, type: 3}
   bulletForce: 20
+  objectPoolSize: 20
+  canShoot: 1
+  OnReloading:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &4141271411665098209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4983150410961937288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5639307802c64864694d426b0dd3db38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToPool: {fileID: 0}
+  poolSize: 10
+  spawnedObjectsParent: {fileID: 0}
