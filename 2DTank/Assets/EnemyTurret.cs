@@ -8,7 +8,7 @@ public class EnemyTurret : MonoBehaviour
     public Transform firePoint;
     public bool canShoot = true;
     private float currentDelay = 0f;
-    private float reloadDelay = 4f;
+    private float reloadDelay = 5f;
 
 
     private Vector2 randomDirection = Vector2.zero;
