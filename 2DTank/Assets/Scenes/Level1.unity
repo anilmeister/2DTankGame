@@ -242,6 +242,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyTank1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6194072158238791678, guid: 4fd33a49a145d154ba711616fdb76c19, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6194072158238791678, guid: 4fd33a49a145d154ba711616fdb76c19, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6609770957744618895, guid: 4fd33a49a145d154ba711616fdb76c19, type: 3}
       propertyPath: m_Value
       value: 1
@@ -422,6 +430,14 @@ PrefabInstance:
     - target: {fileID: 3424239854702652301, guid: 4fd33a49a145d154ba711616fdb76c19, type: 3}
       propertyPath: m_Name
       value: EnemyTank1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6194072158238791678, guid: 4fd33a49a145d154ba711616fdb76c19, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6194072158238791678, guid: 4fd33a49a145d154ba711616fdb76c19, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6609770957744618895, guid: 4fd33a49a145d154ba711616fdb76c19, type: 3}
       propertyPath: m_Value
@@ -608,6 +624,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyTank1 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 6194072158238791678, guid: 4fd33a49a145d154ba711616fdb76c19, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6194072158238791678, guid: 4fd33a49a145d154ba711616fdb76c19, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6609770957744618895, guid: 4fd33a49a145d154ba711616fdb76c19, type: 3}
       propertyPath: m_Value
       value: 1
@@ -727,28 +751,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd6e7a5f31ef56d4ab575c9b8da2b928, type: 3}
---- !u!1 &213835871 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6271487479695158645, guid: 4fd33a49a145d154ba711616fdb76c19, type: 3}
-  m_PrefabInstance: {fileID: 81497015}
-  m_PrefabAsset: {fileID: 0}
---- !u!1818360609 &213835876
-RotationConstraint:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 213835871}
-  m_Enabled: 0
-  m_Weight: 0
-  m_RotationAtRest: {x: 0, y: 0, z: 0}
-  m_RotationOffset: {x: 0, y: 0, z: 0}
-  m_AffectRotationX: 1
-  m_AffectRotationY: 1
-  m_AffectRotationZ: 1
-  m_IsContraintActive: 1
-  m_IsLocked: 1
-  m_Sources: []
 --- !u!1 &251115084 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3424239854702652301, guid: 4fd33a49a145d154ba711616fdb76c19, type: 3}
@@ -17832,28 +17834,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 20, y: 26.46}
   m_EdgeRadius: 0
---- !u!1 &518098254 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6271487479695158645, guid: 4fd33a49a145d154ba711616fdb76c19, type: 3}
-  m_PrefabInstance: {fileID: 1802306633}
-  m_PrefabAsset: {fileID: 0}
---- !u!1818360609 &518098256
-RotationConstraint:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 518098254}
-  m_Enabled: 0
-  m_Weight: 0
-  m_RotationAtRest: {x: 0, y: 0, z: 0}
-  m_RotationOffset: {x: 0, y: 0, z: 0}
-  m_AffectRotationX: 1
-  m_AffectRotationY: 1
-  m_AffectRotationZ: 1
-  m_IsContraintActive: 1
-  m_IsLocked: 1
-  m_Sources: []
 --- !u!1 &534382483
 GameObject:
   m_ObjectHideFlags: 0
@@ -17922,28 +17902,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &543254991 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6271487479695158645, guid: 4fd33a49a145d154ba711616fdb76c19, type: 3}
-  m_PrefabInstance: {fileID: 1136001464}
-  m_PrefabAsset: {fileID: 0}
---- !u!1818360609 &543254993
-RotationConstraint:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 543254991}
-  m_Enabled: 0
-  m_Weight: 0
-  m_RotationAtRest: {x: 0, y: 0, z: 0}
-  m_RotationOffset: {x: 0, y: 0, z: 0}
-  m_AffectRotationX: 1
-  m_AffectRotationY: 1
-  m_AffectRotationZ: 1
-  m_IsContraintActive: 1
-  m_IsLocked: 1
-  m_Sources: []
 --- !u!1001 &601542005
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34708,28 +34666,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &927882037 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6271487479695158645, guid: 4fd33a49a145d154ba711616fdb76c19, type: 3}
-  m_PrefabInstance: {fileID: 2134619652}
-  m_PrefabAsset: {fileID: 0}
---- !u!1818360609 &927882039
-RotationConstraint:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 927882037}
-  m_Enabled: 0
-  m_Weight: 0
-  m_RotationAtRest: {x: 0, y: 0, z: 0}
-  m_RotationOffset: {x: 0, y: 0, z: 0}
-  m_AffectRotationX: 1
-  m_AffectRotationY: 1
-  m_AffectRotationZ: 1
-  m_IsContraintActive: 1
-  m_IsLocked: 1
-  m_Sources: []
 --- !u!1 &1060817033
 GameObject:
   m_ObjectHideFlags: 0
@@ -35326,6 +35262,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyTank1 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6194072158238791678, guid: 4fd33a49a145d154ba711616fdb76c19, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6194072158238791678, guid: 4fd33a49a145d154ba711616fdb76c19, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6609770957744618895, guid: 4fd33a49a145d154ba711616fdb76c19, type: 3}
       propertyPath: m_Value
       value: 1
@@ -35808,6 +35752,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigTank
       objectReference: {fileID: 0}
+    - target: {fileID: 9122584786930769976, guid: 3db5f5a70e9be394bba98b7719a0ad97, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9122584786930769976, guid: 3db5f5a70e9be394bba98b7719a0ad97, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3db5f5a70e9be394bba98b7719a0ad97, type: 3}
 --- !u!114 &1441953988 stripped
@@ -35857,28 +35809,6 @@ Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 3424239854702652297, guid: 4fd33a49a145d154ba711616fdb76c19, type: 3}
   m_PrefabInstance: {fileID: 158122435}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1472035756 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6271487479695158645, guid: 4fd33a49a145d154ba711616fdb76c19, type: 3}
-  m_PrefabInstance: {fileID: 158122435}
-  m_PrefabAsset: {fileID: 0}
---- !u!1818360609 &1472035758
-RotationConstraint:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1472035756}
-  m_Enabled: 0
-  m_Weight: 0
-  m_RotationAtRest: {x: 0, y: 0, z: 0}
-  m_RotationOffset: {x: 0, y: 0, z: 0}
-  m_AffectRotationX: 1
-  m_AffectRotationY: 1
-  m_AffectRotationZ: 1
-  m_IsContraintActive: 1
-  m_IsLocked: 1
-  m_Sources: []
 --- !u!4 &1623150588 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2296935812181552383, guid: 4fd33a49a145d154ba711616fdb76c19, type: 3}
@@ -35920,28 +35850,6 @@ Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 3424239854702652297, guid: 4fd33a49a145d154ba711616fdb76c19, type: 3}
   m_PrefabInstance: {fileID: 2134619652}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1733406226 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6271487479695158645, guid: 4fd33a49a145d154ba711616fdb76c19, type: 3}
-  m_PrefabInstance: {fileID: 73445950}
-  m_PrefabAsset: {fileID: 0}
---- !u!1818360609 &1733406228
-RotationConstraint:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1733406226}
-  m_Enabled: 0
-  m_Weight: 0
-  m_RotationAtRest: {x: 0, y: 0, z: 0}
-  m_RotationOffset: {x: 0, y: 0, z: 0}
-  m_AffectRotationX: 1
-  m_AffectRotationY: 1
-  m_AffectRotationZ: 1
-  m_IsContraintActive: 1
-  m_IsLocked: 1
-  m_Sources: []
 --- !u!1001 &1802306633
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36060,6 +35968,14 @@ PrefabInstance:
     - target: {fileID: 3424239854702652301, guid: 4fd33a49a145d154ba711616fdb76c19, type: 3}
       propertyPath: m_Name
       value: EnemyTank1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6194072158238791678, guid: 4fd33a49a145d154ba711616fdb76c19, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6194072158238791678, guid: 4fd33a49a145d154ba711616fdb76c19, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6609770957744618895, guid: 4fd33a49a145d154ba711616fdb76c19, type: 3}
       propertyPath: m_Value
@@ -36364,28 +36280,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be2e8d6cad23e5c45b8659be1993bba0, type: 3}
---- !u!1 &1915141236 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6271487479695158645, guid: 4fd33a49a145d154ba711616fdb76c19, type: 3}
-  m_PrefabInstance: {fileID: 1999161547}
-  m_PrefabAsset: {fileID: 0}
---- !u!1818360609 &1915141238
-RotationConstraint:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1915141236}
-  m_Enabled: 0
-  m_Weight: 0
-  m_RotationAtRest: {x: 0, y: 0, z: 0}
-  m_RotationOffset: {x: 0, y: 0, z: 0}
-  m_AffectRotationX: 1
-  m_AffectRotationY: 1
-  m_AffectRotationZ: 1
-  m_IsContraintActive: 1
-  m_IsLocked: 1
-  m_Sources: []
 --- !u!1001 &1999161547
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36504,6 +36398,14 @@ PrefabInstance:
     - target: {fileID: 3424239854702652301, guid: 4fd33a49a145d154ba711616fdb76c19, type: 3}
       propertyPath: m_Name
       value: EnemyTank1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6194072158238791678, guid: 4fd33a49a145d154ba711616fdb76c19, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6194072158238791678, guid: 4fd33a49a145d154ba711616fdb76c19, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6609770957744618895, guid: 4fd33a49a145d154ba711616fdb76c19, type: 3}
       propertyPath: m_Value
@@ -36723,6 +36625,14 @@ PrefabInstance:
     - target: {fileID: 3424239854702652301, guid: 4fd33a49a145d154ba711616fdb76c19, type: 3}
       propertyPath: m_Name
       value: EnemyTank1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6194072158238791678, guid: 4fd33a49a145d154ba711616fdb76c19, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6194072158238791678, guid: 4fd33a49a145d154ba711616fdb76c19, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6609770957744618895, guid: 4fd33a49a145d154ba711616fdb76c19, type: 3}
       propertyPath: m_Value
