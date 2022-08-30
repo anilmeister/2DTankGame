@@ -50,7 +50,7 @@ public class AudioManager : MonoBehaviour
     public void PlaySound (int index)
     {
         GameObject soundGameObject = new GameObject("Sound");
-        AudioSource audioSource = soundGameObject.GetComponent<AudioSource>();
+        AudioSource audioSource = soundGameObject.AddComponent<AudioSource>();
         audioSource.volume = 0.2f;
         audioSource.PlayOneShot(clips[index]);
     }
