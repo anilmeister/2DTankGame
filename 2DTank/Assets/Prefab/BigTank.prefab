@@ -5303,7 +5303,7 @@ MonoBehaviour:
   bulletForce: 10
   objectPoolSize: 10
   tank: {fileID: 4494725405616219600}
-  player: {fileID: 0}
+  player: {fileID: 4175414396769387082, guid: be2e8d6cad23e5c45b8659be1993bba0, type: 3}
   offset: 90
   rotationSpeed: 60
   getSight: {fileID: 4494725405616219605}
