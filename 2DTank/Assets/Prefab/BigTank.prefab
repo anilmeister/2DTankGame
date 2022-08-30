@@ -5187,6 +5187,7 @@ GameObject:
   - component: {fileID: 4494725405426783186}
   - component: {fileID: 4494725405426783184}
   - component: {fileID: 8907243594263650231}
+  - component: {fileID: 8878649231392049535}
   m_Layer: 0
   m_Name: Base
   m_TagString: Untagged
@@ -5306,6 +5307,21 @@ MonoBehaviour:
   offset: 90
   rotationSpeed: 60
   getSight: {fileID: 4494725405616219605}
+--- !u!114 &8878649231392049535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4494725405426783188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5639307802c64864694d426b0dd3db38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToPool: {fileID: 0}
+  poolSize: 10
+  spawnedObjectsParent: {fileID: 0}
 --- !u!1 &4494725405616219605
 GameObject:
   m_ObjectHideFlags: 0
@@ -6054,7 +6070,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4983150410961937290, guid: 427c728584e33bf4291dd720d5e2810b, type: 3}
+    - {fileID: 4141271411665098209, guid: 427c728584e33bf4291dd720d5e2810b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 427c728584e33bf4291dd720d5e2810b, type: 3}
 --- !u!4 &1010347848158454439 stripped
 Transform:
