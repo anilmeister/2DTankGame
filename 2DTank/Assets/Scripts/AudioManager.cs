@@ -14,9 +14,9 @@ public class AudioManager : MonoBehaviour
 
     public static AudioManager instance;
 
-
+    private GameObject soundGameObject;
     private ObjectPool pool;
-
+    private AudioSource audioSource;
 
     private void Awake()
     {
@@ -27,8 +27,8 @@ public class AudioManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-
-
+        soundGameObject = new GameObject("Sound");
+        soundGameObject.AddComponent<AudioSource>();
         DontDestroyOnLoad(gameObject);
         foreach ( Sounds s in sounds )
         {   
@@ -47,10 +47,15 @@ public class AudioManager : MonoBehaviour
         s.audioSource.Play();
     }
 
-    public void PlaySound (int index)
+    public void PlaySound(int index)
     {
-        GameObject soundGameObject = new GameObject("Sound");
-        AudioSource audioSource = soundGameObject.AddComponent<AudioSource>();
+        if (soundGameObject == null) { 
+            soundGameObject = new GameObject("Sound");
+            audioSource = soundGameObject.AddComponent<AudioSource>();
+        }
+        else
+            audioSource = soundGameObject.GetComponent<AudioSource>();
+
         audioSource.volume = 0.2f;
         audioSource.PlayOneShot(clips[index]);
     }
